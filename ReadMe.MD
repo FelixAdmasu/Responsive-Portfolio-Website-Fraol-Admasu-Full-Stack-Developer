@@ -96,8 +96,9 @@
 
 | Category | Feature | Implementation |
 |----------|---------|----------------|
-| **Visual** | LightRays WebGL (9 instances) | OGL shader, IntersectionObserver, theme-aware |
+| **Visual** | LightRays WebGL (11 instances) | OGL shader, IntersectionObserver, theme-aware |
 | **Visual** | Antigravity hero ring | Three.js particle system |
+| **Visual** | Astronaut float animation | CSS `@keyframes float`, subtle up/down hover |
 | **Visual** | Magic Rings footer | Three.js glow ring geometry |
 | **Theme** | Light/Dark mode toggle | CSS variables + `localStorage` persistence |
 | **Theme** | OS preference detection | `prefers-color-scheme` media query |
@@ -194,7 +195,9 @@
 │   └── swiper-bundle.min.js      # Swiper carousel library
 │
 ├── img/                          # Assets (SVGs, PNGs, WebM videos)
-│   ├── felix-adm2.png            # Hero/profile photo
+│   ├── Stylized Astronaut Render.png  # Hero astronaut illustration (with float animation)
+│   ├── Avatar.svg                # Avatar illustration
+│   ├── felix-adm2.png            # Profile photo
 │   ├── Mesob Website Thumbnail.png  # Mesob system screenshot
 │   ├── favicon_io/               # Favicon files + site.webmanifest
 │   │   ├── android-chrome-192x192.png
@@ -223,6 +226,7 @@
 - **Antigravity particle ring** background (Three.js WebGL)
 - Name, role title ("IT Specialist & Full Stack Developer")
 - Biography with Mesob impact statement (21,000+ permits)
+- **Astronaut illustration** with subtle float animation (up/down hover effect)
 - Social links (GitHub, LinkedIn, Email)
 - CTA button → Contact section
 - Decorative SVG shapes (wave + circle)

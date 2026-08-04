@@ -59,7 +59,6 @@ if (projectsContainer) {
         },
         mousewheel: true,
         keyboard: true,
-        autoHeight: true,
     });
 }
 

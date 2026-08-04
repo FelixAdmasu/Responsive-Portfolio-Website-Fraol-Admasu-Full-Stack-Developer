@@ -1342,24 +1342,6 @@ body.dark-theme {
 .projects__content {
   display: grid;
   justify-content: center;
-  align-content: start;
-  padding: 0 0.5rem;
-  min-height: 320px;
-  transition: height 0.3s ease;
-}
-.projects__content .full-description {
-  display: none;
-  margin-top: 0.5rem;
-  line-height: 1.6;
-  text-align: left;
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-.projects__content .full-description.visible {
-  display: block;
-}
-.projects__content .short-description {
-  margin-bottom: 0.5rem;
 }
 .projects__img {
   width: 250px;

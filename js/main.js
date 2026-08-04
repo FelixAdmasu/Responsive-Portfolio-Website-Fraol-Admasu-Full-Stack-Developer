@@ -235,7 +235,7 @@ const videoObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 
-document.querySelectorAll('.projects__img').forEach(video => {
+document.querySelectorAll('.projects__img[src$=".webm"], .projects__img[src$=".mp4"], video.projects__img').forEach(video => {
     videoObserver.observe(video);
 });
 

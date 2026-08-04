@@ -49,7 +49,9 @@ function validateField(field) {
     return isValid;
 }
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
     
     // Validate all fields
@@ -89,7 +91,8 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
             btn.disabled = false;
             console.error('Error:', error);
         });
-});
+    });
+}
 
 // Real-time validation on blur
 document.querySelectorAll('#contactForm input, #contactForm textarea').forEach(field => {

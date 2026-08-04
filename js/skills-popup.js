@@ -9,14 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const projectContent = this.closest('.projects__content');
             const shortDescription = projectContent.querySelector('.short-description');
             const fullDescription = projectContent.querySelector('.full-description');
-            if (fullDescription.style.display === 'none' || fullDescription.style.display === '') {
-                fullDescription.style.display = 'block';
-                shortDescription.style.display = 'none';
-                this.textContent = 'Read less';
-            } else {
-                fullDescription.style.display = 'none';
+            const isExpanded = fullDescription.classList.contains('expanded');
+            if (isExpanded) {
+                fullDescription.classList.remove('expanded');
                 shortDescription.style.display = 'block';
                 this.textContent = 'Read more';
+            } else {
+                fullDescription.classList.add('expanded');
+                shortDescription.style.display = 'none';
+                this.textContent = 'Read less';
             }
         });
     });

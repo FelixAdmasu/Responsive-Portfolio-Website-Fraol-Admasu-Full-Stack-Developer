@@ -1343,6 +1343,17 @@ body.dark-theme {
   display: grid;
   justify-content: center;
 }
+.projects__content .full-description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+  line-height: 1.6;
+}
+.projects__content .full-description.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
 .projects__img {
   width: 250px;
   border-radius: 0.75rem;

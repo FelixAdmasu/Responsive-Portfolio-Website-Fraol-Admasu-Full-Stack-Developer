@@ -172,10 +172,17 @@ if (themeButton) {
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const header = document.getElementById('header')
+let scrollHeaderTicking = false
 const scrollHeader = () => {
-    if (!header) return
-    window.scrollY >= 50 ? header.classList.add('bg-header')
-        : header.classList.remove('bg-header')
+    if (!scrollHeaderTicking) {
+        requestAnimationFrame(() => {
+            if (!header) return
+            window.scrollY >= 50 ? header.classList.add('bg-header')
+                : header.classList.remove('bg-header')
+            scrollHeaderTicking = false
+        })
+        scrollHeaderTicking = true
+    }
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -329,3 +336,23 @@ if (document.readyState === 'loading') {
 } else {
     initSkills()
 }
+
+/*=============== WEBGL ERROR BOUNDARY ===============*/
+window.addEventListener('error', function(e) {
+    const isWebGLScript = e.filename && (
+        e.filename.includes('lightrays.js') ||
+        e.filename.includes('antigravity.js') ||
+        e.filename.includes('magicrings.js')
+    );
+    if (isWebGLScript) {
+        console.warn('WebGL effect failed to load:', e.message);
+        const containers = document.querySelectorAll('.light-rays-container');
+        containers.forEach(c => c.style.display = 'none');
+    }
+});
+
+window.addEventListener('unhandledrejection', function(e) {
+    if (e.reason && e.reason.message && e.reason.message.includes('WebGL')) {
+        console.warn('WebGL promise rejected:', e.reason.message);
+    }
+});

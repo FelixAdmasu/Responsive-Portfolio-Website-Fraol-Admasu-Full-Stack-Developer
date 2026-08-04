@@ -1349,6 +1349,7 @@ body.dark-theme {
   transition: max-height 0.4s ease, opacity 0.3s ease;
   opacity: 0;
   line-height: 1.6;
+  color: var(--title-color);
 }
 .projects__content .full-description.expanded {
   max-height: 500px;

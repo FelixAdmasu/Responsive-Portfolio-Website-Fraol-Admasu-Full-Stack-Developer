@@ -2,7 +2,7 @@
 
 # Fraol Admasu — IT Specialist & Full Stack Developer Portfolio
 
-### A production-grade, single-page portfolio built with vanilla HTML/CSS/JS and custom WebGL visual effects
+#### A production-grade, single-page portfolio built with vanilla HTML/CSS/JS and custom WebGL visual effects
 
 </div>
 
@@ -304,7 +304,7 @@ Swiper carousel with 7 projects:
 
 A custom WebGL shader effect that renders animated light rays sweeping across sections. Built as a vanilla port of an OGL shader, loaded via dynamic `import()`.
 
-#### Ray Instances (10 total)
+#### Ray Instances (11 total)
 
 | # | Section | Origin | Purpose |
 |---|---------|--------|---------|

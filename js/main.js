@@ -63,6 +63,20 @@ if (projectsContainer) {
     });
 }
 
+/*=============== SWIPER TESTIMONIAL ===============*/
+const testimonialContainer = document.querySelector('.testimonial__container')
+let swiperTestimonial = null
+if (testimonialContainer) {
+    swiperTestimonial = new Swiper(".testimonial__container", {
+        keyboard: true,
+        mousewheel: true,
+        navigation: {
+            nextEl: ".testimonial__container .swiper-button-next",
+            prevEl: ".testimonial__container .swiper-button-prev",
+        },
+    });
+}
+
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 const navLinks = document.querySelectorAll('.nav__link')
@@ -184,7 +198,7 @@ if (typeof ScrollReveal !== 'undefined' && !prefersReducedMotion) {
         duration: 1200,
         delay: 300,
     })
-    sr.reveal('.home__data, .projects__container, .footer__container')
+    sr.reveal('.home__data, .projects__container, .testimonial__container, .footer__container')
     sr.reveal('.home__info div', { delay: 600, origin: 'bottom', interval: 100 })
     sr.reveal('.contact__content:nth-child(1)', { origin: 'left' })
     sr.reveal('.contact__content:nth-child(2)', { origin: 'right' })

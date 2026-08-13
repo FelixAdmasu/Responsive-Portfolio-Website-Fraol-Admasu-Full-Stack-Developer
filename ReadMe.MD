@@ -10,7 +10,7 @@
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#tech-stack) [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#tech-stack) [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#tech-stack) [![OGL](https://img.shields.io/badge/OGL-WebGL-6B3FA0?style=for-the-badge&logo=webgl&logoColor=white)](#tech-stack) [![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)](#tech-stack)
 
-**Live Site:** [https://fraoladmasu.dev](https://fraoladmasu.dev) | **Repository:** [GitHub](https://github.com/FelixAdmasu/Responsive-Portfolio-Website-Fraol-Admasu-Full-Stack-Developer)
+**Repository:** [GitHub](https://github.com/FelixAdmasu/Responsive-Portfolio-Website-Fraol-Admasu-Full-Stack-Developer)
 
 ---
 

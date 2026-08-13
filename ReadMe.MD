@@ -1,4 +1,4 @@
-<div align="left">
+<div align="auto">
 
 # Fraol Admasu — IT Specialist & Full Stack Developer Portfolio
 
